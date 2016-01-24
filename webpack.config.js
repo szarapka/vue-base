@@ -1,7 +1,7 @@
 var webpack = require('webpack')
 
 module.exports = {
-  entry: ['./src/boostrap.js'],
+  entry: ['./src/bootstrap.js'],
   output: {
     path: __dirname + '/build/',
     publicPath: 'build/',

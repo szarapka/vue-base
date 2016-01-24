@@ -4,6 +4,9 @@
   "description": "Vue.js project base.",
   "author": "Scott Szarapka <scott@szarapka.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/szarapka/vue-base.git"
