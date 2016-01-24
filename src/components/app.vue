@@ -12,10 +12,10 @@ export default {
     }
   },
   ready() {
-    let token = localStorage.getItem('hes-token')
+    let token = localStorage.getItem(config.localstorage.token)
     if(token !== null && token !== 'undefined') {
       this.$http
-        .get(this.api + '/authenticate')
+        .get(config.api.base + config.api.auth)
         .then((data) => {
           this.setSignIn(data.data)
         }, (err) => {

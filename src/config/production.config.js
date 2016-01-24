@@ -1,9 +1,13 @@
 var config = {
   api: {
-    base_url: 'https://url.com/api',
+    base: 'https://url.com/api/v1',
+    auth: '/authenticate'
   },
   vue: {
     debug: false
+  },
+  localstorage: {
+    token: 'token'
   }
 }
 

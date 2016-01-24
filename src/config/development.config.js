@@ -1,6 +1,7 @@
 var config = {
   api: {
-    base_url: 'http://localhost:3000/api',
+    base: 'http://localhost:3000/api/v1',
+    auth: '/authenticate'
   },
   vue: {
     debug: true
