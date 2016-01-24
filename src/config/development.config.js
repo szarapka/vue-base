@@ -4,6 +4,9 @@ var config = {
   },
   vue: {
     debug: true
+  },
+  localstorage: {
+    token: 'token'
   }
 }
 

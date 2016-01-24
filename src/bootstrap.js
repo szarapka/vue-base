@@ -3,6 +3,10 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import { configure } from './router'
 
+// Setup Config
+window.config = require('./config')
+Vue.config.debug = config.vue.debug
+
 // Setup Vue-Router
 Vue.use(VueRouter)
 export let router = new VueRouter()
@@ -10,10 +14,8 @@ configure(router)
 
 // Setup Vue-Resource
 Vue.use(VueResource)
-
-// We need our config
-window.config = require('./config')
-Vue.config.debug = config.vue.debug
+Vue.http.headers.common['Authorization'] = 'Bearer ' +
+    localStorage.getItem(config.localstorage.token)
 
 // Bootstrap
 const App = Vue.extend(require('./components/app.vue'))
