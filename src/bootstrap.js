@@ -9,7 +9,11 @@ Vue.config.debug = config.vue.debug
 
 // Setup Vue-Router
 Vue.use(VueRouter)
-export let router = new VueRouter()
+export let router = new VueRouter({
+  // html5 history mode
+  // http://vuejs.github.io/vue-router/en/options.html
+  history: true
+})
 configure(router)
 
 // Setup Vue-Resource

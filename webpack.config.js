@@ -16,6 +16,10 @@ module.exports = {
   babel: {
     presets: ['es2015'],
     plugins: ['transform-runtime']
+  },
+  devServer: {
+    port: 8080,
+    historyApiFallback: true
   }
 }
 
