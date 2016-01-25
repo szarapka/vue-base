@@ -1,7 +1,7 @@
 <template>
   <h1>Sign In</h1>
   <div id="alerts" v-if="messages.length > 0">
-    <div v-for="message in messages">
+    <div v-for="message in messages" track-by="$index">
       <p>{{message}}</p>
     </div>
   </div>
