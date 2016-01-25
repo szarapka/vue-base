@@ -36,6 +36,7 @@ export default {
           console.log(resp)
           localStorage.setItem(config.localstorage.token, resp.data.token)
           this.$dispatch("signin", resp.data.user)
+          return this.$route.router.go({ name: 'home' })
         }, (err) => {
           this.messages.push(err.statusText)
         })

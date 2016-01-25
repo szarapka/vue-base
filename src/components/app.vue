@@ -11,6 +11,7 @@ export default {
     }
   },
   ready() {
+    console.log('test')
     let token = localStorage.getItem(config.localstorage.token)
     if(token !== null && token !== "undefined") {
       this.$http
@@ -26,7 +27,6 @@ export default {
     setSignIn(user) {
       this.user = user
       this.authorized = true
-      return this.$route.router.go({ name: 'home' })
     },
     destroySignIn() {
       this.user = null
