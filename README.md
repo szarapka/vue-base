@@ -3,6 +3,8 @@ Vue.js Base
 
 Boilerplate for large SPA's using Vue.js. This is opionated. Hodor.
 
+TODO: Write docs that don't suck.
+
 License
 =======
 
