@@ -3,6 +3,8 @@ Vue.js Base
 
 Boilerplate for large SPA's using Vue.js. This is opionated. Hodor.
 
+Use this boilerplate with this API boilerplate: [szarapka/api-base](https://github.com/szarapka/api-base)
+
 TODO: Write docs that don't suck.
 
 License
